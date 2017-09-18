@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+
+	<definition name="flightSearchTile" extends="base.definition">
+		<put-attribute name="title" value="Search Flight" />
+		<put-attribute name="body" value="/WEB-INF/views/flightsearch.jsp" />
+	</definition>
+
+	<definition name="loginTile" extends="base.definition">
+		<put-attribute name="title" value="Login Page" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+
+	<definition name="welcomeTile" extends="base.definition">
+		<put-attribute name="title" value="Welcome!!" />
+		<put-attribute name="body" value="/WEB-INF/views/welcomePage.jsp" />
+	</definition>
+	<definition name="index" extends="base.definition">
+		<put-attribute name="title" value="Index" />
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+	<definition name="uploadTile" extends="base.definition">
+		<put-attribute name="title" value="Upload" />
+		<put-attribute name="body" value="/WEB-INF/views/upload.jsp" />
+	</definition>
+</tiles-definitions>
